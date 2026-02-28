@@ -1,0 +1,14 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_order_form_inherit_freee_conect" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.freee_conect</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_inspection" type="object" string="点検" class="btn-primary"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
