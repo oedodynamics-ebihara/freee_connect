@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
             <xpath expr="//header" position="inside">
-                <button name="action_inspection" type="object" string="点検" class="btn-primary"/>
+                <button name="action_connection_test" type="object" string="連携テスト" class="btn-primary"/>
             </xpath>
         </field>
     </record>

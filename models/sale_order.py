@@ -4,14 +4,14 @@ from odoo import models, _
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
-    def action_inspection(self):
+    def action_connection_test(self):
         return {
             'type': 'ir.actions.client',
             'tag': 'display_notification',
             'params': {
-                'title': _('確認'),
-                'message': _('点検中'),
-                'type': 'warning',
+                'title': _('テスト実行'),
+                'message': _('テスト中'),
+                'type': 'info',
                 'sticky': False,
             }
         }
