@@ -37,7 +37,7 @@ class SaleOrder(models.Model):
             "company_id": int(company_id),
             "partner_id": partner_id,
             "partner_title": "御中",
-            "issue_date": today_str,
+            "quotation_date": today_str,
             "tax_entry_method": "out",
             "tax_fraction": "omit",
             "withholding_tax_entry_method": "in",
