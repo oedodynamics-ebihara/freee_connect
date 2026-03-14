@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_inherit_freee" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.freee</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@name='catalog_setting_container']" position="after">
+                <block title="Freee Integration" name="freee_integration_setting_container">
+                    <setting string="Freee API Connection" help="Configure your Freee integration key and company ID.">
+                        <div class="content-group">
+                            <div class="row mt16">
+                                <label for="freee_api_key" class="col-lg-3 o_light_label"/>
+                                <field name="freee_api_key" class="oe_inline"/>
+                            </div>
+                            <div class="row mt16">
+                                <label for="freee_company_id" class="col-lg-3 o_light_label"/>
+                                <field name="freee_company_id" class="oe_inline"/>
+                            </div>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

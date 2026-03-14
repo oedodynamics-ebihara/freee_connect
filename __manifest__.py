@@ -23,6 +23,7 @@ Long description of module's purpose
     # always loaded
     'data': [
         'views/sale_order_views.xml',
+        'views/res_config_settings_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
